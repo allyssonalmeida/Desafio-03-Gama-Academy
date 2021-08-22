@@ -1,0 +1,9 @@
+.imageElement--carousel {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.infoCardContainer--leadform {
+  margin: 0 auto;
+  justify-content: center;
+}

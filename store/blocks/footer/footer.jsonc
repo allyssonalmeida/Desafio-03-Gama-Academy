@@ -1,0 +1,84 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer"]
+  },
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer"]
+  },
+  "flex-layout.row#footer": {
+    "children": ["sticky-layout#footer"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "blockClass": "footer-menu"
+    }
+  },
+  "sticky-layout#footer": {
+    "props": {
+      "position": "bottom"
+    },
+    "children": ["vtex.menu@2.x:menu#websites"]
+  },
+  "vtex.menu@2.x:menu#websites": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": "cartIcon",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "entrar",
+            "text": "Entrar"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "desafios",
+            "text": "Desafios"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "loja",
+            "text": "Loja"
+          }
+        },
+        {
+          "id": "menu-item-suporte",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "https://wa.me/5511964335064",
+            "noFollow": false,
+            "tagTitle": "suporte",
+            "text": "Suporte"
+          }
+        }
+      ],
+      "blockClass": "footer-menu"
+    }
+  }
+}

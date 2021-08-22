@@ -1,0 +1,14 @@
+.sliderLayoutContainer--carousel {
+  width: 80vw;
+  height: 260px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: transparent;
+}
+.caretIcon--carousel {
+  color: #fff;
+}
+.paginationDotsContainer--carousel {
+  bottom: -20px;
+}

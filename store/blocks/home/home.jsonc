@@ -1,0 +1,394 @@
+{
+  "store.home": {
+    "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
+  },
+  "responsive-layout.desktop": {
+    "children": ["tab-layout#home"]
+  },
+  "responsive-layout.mobile": {
+    "children": ["tab-layout#home"]
+  },
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "list-context.image-list#home",
+      "modal-trigger#leadForm",
+      "tab-content#home"
+    ],
+    "props": {
+      "defaultActiveTabId": "promocao",
+      "blockClass": "tab-products"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#promocao",
+      "tab-list.item#corinthians",
+      "tab-list.item#palmeiras",
+      "tab-list.item#signos",
+      "tab-list.item#divertidos",
+      "tab-list.item#maravilhas",
+      "tab-list.item#guerreiros"
+    ],
+    "props": {
+      "blockClass": "tab-menu"
+    }
+  },
+  "tab-list.item#promocao": {
+    "props": {
+      "tabId": "promocao",
+      "label": "Promoção",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#corinthians": {
+    "props": {
+      "tabId": "corinthians",
+      "label": "Corinthians"
+    }
+  },
+  "tab-list.item#palmeiras": {
+    "props": {
+      "tabId": "palmeiras",
+      "label": "Palmeiras"
+    }
+  },
+  "tab-list.item#signos": {
+    "props": {
+      "tabId": "signos",
+      "label": "Signos"
+    }
+  },
+  "tab-list.item#divertidos": {
+    "props": {
+      "tabId": "divertidos",
+      "label": "divertidos"
+    }
+  },
+  "tab-list.item#maravilhas": {
+    "props": {
+      "tabId": "maravilhas",
+      "label": "maravilhas"
+    }
+  },
+  "tab-list.item#guerreiros": {
+    "props": {
+      "tabId": "guerreiros",
+      "label": "guerreiros"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#promocao",
+      "tab-content.item#corinthians",
+      "tab-content.item#palmeiras",
+      "tab-content.item#signos",
+      "tab-content.item#divertidos",
+      "tab-content.item#maravilhas",
+      "tab-content.item#guerreiros"
+    ]
+  },
+  "tab-content.item#promocao": {
+    "children": ["search-result-layout.customQuery#promocao"],
+    "props": {
+      "tabId": "promocao"
+    }
+  },
+  "tab-content.item#corinthians": {
+    "children": ["search-result-layout.customQuery#corinthians"],
+    "props": {
+      "tabId": "corinthians"
+    }
+  },
+  "tab-content.item#palmeiras": {
+    "children": ["search-result-layout.customQuery#palmeiras"],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+  "tab-content.item#signos": {
+    "children": ["search-result-layout.customQuery#signos"],
+    "props": {
+      "tabId": "signos"
+    }
+  },
+  "tab-content.item#divertidos": {
+    "children": ["search-result-layout.customQuery#divertidos"],
+    "props": {
+      "tabId": "divertidos"
+    }
+  },
+  "tab-content.item#maravilhas": {
+    "children": ["search-result-layout.customQuery#maravilhas"],
+    "props": {
+      "tabId": "maravilhas"
+    }
+  },
+  "tab-content.item#guerreiros": {
+    "children": ["search-result-layout.customQuery#guerreiros"],
+    "props": {
+      "tabId": "guerreiros"
+    }
+  },
+  "search-result-layout.customQuery#promocao": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "KitUpMedal",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#products",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "corinthians",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#products",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "palmeiras",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#products",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.customQuery#signos": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "sagitario, aquario",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#products",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.customQuery#divertidos": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "challenge, trofeu",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#products",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.customQuery#maravilhas": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "coroa, COMBO, challenge, trofeu",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#products",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.customQuery#guerreiros": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "arqueiro, mosqueteiro",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#products",
+      "search-result-layout.mobile"
+    ]
+  },
+
+  "search-result-layout.desktop#products": {
+    "children": ["flex-layout.row#result"],
+    "props": {
+      "preventRouteChange": true,
+      "maxWidth": "80vw"
+    }
+  },
+  "search-result-layout.mobile": {
+    "children": ["flex-layout.row#mobile-result"],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#result": {
+    "children": ["search-content#products"]
+  },
+  "flex-layout.row#mobile-result": {
+    "children": ["search-content#mobile-products"]
+  },
+  "search-content#products": {
+    "blocks": ["gallery#products", "not-found"]
+  },
+  "search-content#mobile-products": {
+    "blocks": ["gallery#mobile-products", "not-found"]
+  },
+  "gallery#products": {
+    "props": {
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 4
+        },
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 2
+        },
+        {
+          "name": "many",
+          "component": "ManyByLineSummary",
+          "itemsPerRow": {
+            "desktop": 4,
+            "mobile": 1
+          }
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf#products",
+      "ManyByLineSummary": "product-summary.shelf#products",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "blockClass": "products"
+    }
+  },
+  "gallery#mobile-products": {
+    "props": {
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 1
+        },
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 1
+        },
+        {
+          "name": "many",
+          "component": "ManyByLineSummary",
+          "itemsPerRow": {
+            "desktop": 4,
+            "mobile": 1
+          }
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf#products",
+      "ManyByLineSummary": "product-summary.shelf#products",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "blockClass": "products"
+    }
+  },
+  "product-summary.shelf#products": {
+    "children": [
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-image",
+      "product-selling-price",
+      "add-to-cart-button#products"
+    ]
+  },
+  "add-to-cart-button#products": {
+    "props": {
+      "text": "Ver Detalhes",
+      "onClickBehavior": "go-to-product-page"
+    }
+  },
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "list-context.image-list#home": {
+    "children": ["slider-layout#home"],
+    "props": {
+      "preload": true,
+      "height": 250,
+      "images": [
+        {
+          "image": "assets/images/banner-1.png",
+          "description": "Banner Promocional"
+        },
+        {
+          "image": "assets/images/banner-2.png",
+          "description": "Produto em Destaque"
+        }
+      ]
+    }
+  },
+  "modal-trigger#leadForm": {
+    "children": ["info-card#leadForm", "modal-layout#leadForm"],
+    "props": {
+      "blockClass": "leadform"
+    }
+  },
+  "info-card#leadForm": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "headline": "Aproveite nossas Promoções!",
+      "subhead": "Cadastre-se para receber PROMOÇÕES EXCLUSIVAS.",
+      "textAlignment": "center",
+      "callToActionMode": "button",
+      "callToActionText": "Quero me Cadastrar",
+      "blockClass": "leadform"
+    }
+  },
+  "modal-layout#leadForm": {
+    "children": ["leadform"]
+  }
+}
