@@ -4,6 +4,9 @@
   overflow-x: scroll;
   flex-wrap: nowrap;
   -ms-overflow-style: none; /* IE and Edge */
+  position: fixed;
+  top: 62px;
+  z-index: 999;
 }
 .listContainer--tab-menu::-webkit-scrollbar {
   display: none;

@@ -1,8 +1,8 @@
 .sliderLayoutContainer--carousel {
   width: 80vw;
-  height: 260px;
+  height: 280px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 20px;
   background: transparent;
 }
@@ -10,5 +10,5 @@
   color: #fff;
 }
 .paginationDotsContainer--carousel {
-  bottom: -20px;
+  bottom: -30px;
 }

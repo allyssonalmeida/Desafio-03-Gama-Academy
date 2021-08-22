@@ -1,9 +1,13 @@
 .imageElement--carousel {
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
   width: 100%;
+  object-position: top center;
 }
 .infoCardContainer--leadform {
   margin: 0 auto;
   justify-content: center;
+}
+.searchIcon {
+  color: #fff;
 }

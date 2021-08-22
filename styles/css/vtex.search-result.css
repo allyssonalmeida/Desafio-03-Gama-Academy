@@ -1,3 +1,9 @@
 .gallery--products {
   padding-left: 0;
+  width: 80vw;
+  margin: 0 auto;
+}
+.searchResultContainer {
+  width: 80vw;
+  margin-bottom: 65px;
 }

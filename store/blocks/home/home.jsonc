@@ -86,7 +86,10 @@
       "tab-content.item#divertidos",
       "tab-content.item#maravilhas",
       "tab-content.item#guerreiros"
-    ]
+    ],
+    "props": {
+      "width": "80vw"
+    }
   },
   "tab-content.item#promocao": {
     "children": ["search-result-layout.customQuery#promocao"],
@@ -233,7 +236,7 @@
         "simulationBehavior": "skip",
         "maxItemsPerPage": 8,
         "hideUnavailableItems": true,
-        "queryField": "arqueiro, mosqueteiro",
+        "queryField": "arqueiro, mosqueteiro, guerreiro",
         "mapField": "ft"
       }
     },
@@ -331,7 +334,7 @@
       "product-summary-name",
       "product-summary-space",
       "product-summary-image",
-      "product-selling-price",
+      "product-summary-price",
       "add-to-cart-button#products"
     ]
   },
@@ -350,18 +353,22 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "marginTop": 10
     }
   },
   "list-context.image-list#home": {
     "children": ["slider-layout#home"],
     "props": {
       "preload": true,
-      "height": 250,
+      "height": 280,
       "images": [
         {
           "image": "assets/images/banner-1.png",
-          "description": "Banner Promocional"
+          "description": "Banner Promocional",
+          "props": {
+            "width": "100%"
+          }
         },
         {
           "image": "assets/images/banner-2.png",

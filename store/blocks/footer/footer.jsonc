@@ -45,20 +45,20 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/about-us",
+            "href": "#",
             "noFollow": false,
             "tagTitle": "desafios",
             "text": "Desafios"
           }
         },
         {
-          "id": "menu-item-about-us",
+          "id": "menu-item-loja",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/",
+            "href": "#",
             "noFollow": false,
             "tagTitle": "loja",
             "text": "Loja"

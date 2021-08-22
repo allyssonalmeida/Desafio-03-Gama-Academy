@@ -1,5 +1,11 @@
 .flexRowContent--main-header-mobile,
 .flexRowContent--main-header-desktop,
 .flexRow--footer-menu {
-  background: #212121;
+  background: #212121 !important;
+}
+.flexRow--footer-menu {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 99999;
 }
