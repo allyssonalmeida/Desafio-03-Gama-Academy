@@ -1,0 +1,18 @@
+{
+  "vendor": "hiringcoders2021",
+  "name": "leadform-allissuf",
+  "version": "0.0.1",
+  "title": "Lead",
+  "description": "Formulário para captura de Leads",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
